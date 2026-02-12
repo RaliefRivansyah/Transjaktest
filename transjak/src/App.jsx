@@ -1,17 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router";
-
+import { BrowserRouter, Routes, Route } from 'react-router';
+import Homepage from './pages/Homepage';
 
 function App() {
-
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                        <Route path="/" index element={<HomePage />} />
+                    <Route path="/" index element={<Homepage />} />
                 </Routes>
-            </BrowserRouter>,
+            </BrowserRouter>
         </>
     );
 }
 
-export default App
+export default App;
